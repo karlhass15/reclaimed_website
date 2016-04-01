@@ -2,7 +2,10 @@
 
 myApp.controller('HeroController',['$scope', function ($scope) {
 
-        $scope.slides = [
+    //add interval function from gallery controller, not working
+    $scope.myInterval = 4000;
+
+    $scope.slides = [
             {image: 'http://i.imgur.com/wabXAOf.jpg', description: 'Image 01'},
             {image: 'http://i.imgur.com/RP3NjSW.jpg', description: 'Image 02'},
             {image: 'http://i.imgur.com/uV1v4CF.jpg', description: 'Image 03'}

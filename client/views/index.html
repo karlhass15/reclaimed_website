@@ -12,17 +12,17 @@
     <!--Hero Slidder tweenMax script-->
     <script src="/vendors/Tween/1.10.3-TweenMax.min.js"></script>
     <!--Using older angularjs developed in 1.45 but 1.39 & 1.38 made all finally work-->
-    <script src="/vendors/angular/1.3.9-angular.js"></script>
+    <!--<script src="/vendors/angular/1.3.9-angular.js"></script>-->
 
-    <!--<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>-->
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-animate/angular-animate.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-aria/angular-aria.min.js"></script>
 
     <script type="text/javascript" src="/vendors/angular-material/angular-material.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-touch/angular-touch.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"
-            ></script>
+    <script type="text/javascript" src="/vendors/ui-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-carousel/angular-carousel.min.js"></script>
 
 
 
@@ -36,7 +36,6 @@
     <!--Contact Form-->
     <script type="text/javascript" src="/assets/scripts/controllers/ContactFormController.min.js"></script>
 
-    <!--<script type="text/javascript" src="/assets/scripts/controllers/ScrollControl.min.js"></script>-->
 
     <div ng-view></div>
 
@@ -54,13 +53,22 @@
 
 <div ng-include="'/assets/views/templates/about.html'"></div>
 
-<!--<div ng-include="'/assets/views/templates/portfolio.html'"></div>-->
+<div ng-include="'/assets/views/templates/portfolio.html'"></div>
 
 <div ng-include="'/assets/views/templates/contact.html'"></div>
 
 <div ng-include="'/assets/views/templates/footer.html'"></div>
 
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-75851202-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>

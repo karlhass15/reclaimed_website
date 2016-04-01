@@ -132,44 +132,48 @@ h5 {
     /*transition: font-size .50s ease-in;*/
 /*}*/
 /*GALLERY*/
+
+
+/*sizes all frame picture and carousel together*/
+#portfolio {
+    z-index: 400;
+    width: 64%;
+    margin: auto;
+    margin-bottom: 250px;
+}
+
 .frame {
     z-index: 500;
-    /*top-margin: 100px;*/
-    /*margin-left: 255px;*/
-    /*margin-right: */
-    height: auto;
-    width: 700px;
-    margin: auto;
-
-}
-#portfolio > div{
-    height: 400px;
-    /*margin-bottom: 100px;*/
-}
-.photo{
-    height: 400px;
-    width: 600px;
-    border-radius: 5px;
-    margin-top: 97px;
-    /*bottom-margin: 125px;*/
-
-
-}
-#portfolio {
-    /*position: absolute;*/
-    width:600px;
-    height: 400px;
-
-    /*left:50%;*/
-    /*top:20px;*/
-    /*margin-left:20px;*/
+    width: 91%;
     display: block;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin-bottom: 100px;*/
+    margin: auto;
+    position: absolute;
+
+}
+
+.carousel-control {
+    left: -50px;
+    width: 0;
+}
+
+
+.photo{
+    width: 80%;
+    position: relative;
+    border-radius: 5px;
     margin: auto;
 
+}
+img.photo {
+    margin-top: 3em;
+}
 
+/*helps adjust the picture inside the frame*/
+.carousel-inner {
+    position: relative;
+    width: 101%;
+    padding-top: 3.5em;
+    padding-right: 3.7em;
 }
 
 /*CONTACT FORM*/

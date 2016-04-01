@@ -21,35 +21,11 @@ module.exports = function(grunt){
             controllers4: {
                 src: 'client/scripts/controllers/GalleryController.js',
                 dest: 'server/public/assets/scripts/controllers/GalleryController.min.js'
-            },
-            controllers5: {
-                src: 'client/scripts/controllers/ScrollControl.js',
-                dest: 'server/public/assets/scripts/controllers/ScrollControl.min.js'
             }
 
         },
         copy: {
-            angular: {
-                expand: true,
-                cwd: 'node_modules',
-                src: [
-                    "angular/angular.min.js",
-                    "angular/angular.min.js.map",
-                    "angular-route/angular-route.min.js",
-                    "angular-route/angular-route.min.js.map",
-                    "angular-aria/angular-aria.min.js",
-                    "angular-aria/angular-aria.min.js.map"
-                ],
-                "dest": "server/public/vendors/"
-            },
-            bootstrap: {
-                expand: true,
-                cwd: 'node_modules/bootstrap/dist/css',
-                src: [
-                    "bootstrap.min.css"
-                ],
-                "dest": "server/public/vendors/bootstrap"
-            },
+
             html: {
                 expand: true,
                 cwd: "client",
@@ -80,12 +56,7 @@ module.exports = function(grunt){
                 src: 'styles/style.css',
                 dest: 'server/public/assets/'
             },
-            scroll: {
-                expand: true,
-                cwd: "client",
-                src: 'styles/scroll.css',
-                dest: 'server/public/assets/'
-            },
+
             hero: {
                 expand: true,
                 cwd: "client",

@@ -1,4 +1,6 @@
-var myApp = angular.module("myApp", ['ngRoute', 'ngAnimate', 'ngMaterial']);
+var myApp = angular.module("myApp", ['ngRoute', 'ui.bootstrap', 'ngAnimate', 'ngAria', 'ngMaterial']);
+
+//ui.bootstrap was the missing injector with slider being unsupported by new angular vs
 
 myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.

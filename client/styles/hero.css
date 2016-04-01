@@ -33,7 +33,7 @@
 .arrow.prev {
     opacity: 0.2;
     left: 35px;
-    background-image: url('./paddle_prev_fff.png');
+    background-image: url('paddle_prev_fff.png');
     transition: 0.2s linear all;
 }
 
